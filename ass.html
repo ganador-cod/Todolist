@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #24a7f3;
+        }
+        .overall{
+            box-shadow: 3px 4px 6px rgb(51, 48, 48);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10em auto;
+            background: #fff;
+            /* border: 1px solid ; */
+            display: flex;
+            width: 35%;
+            height: 9em;
+        }
+        .div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 4.8em;
+            width: 80%;
+            /* border: 2px solid; */
+        }
+        .input{
+            outline: none;
+            border: none;
+           border-bottom: 2px solid gray;
+            width: 100%;
+            height: 2em;
+        }
+        .add:hover{
+            background: #1eb18c;
+        }
+        .box{
+            margin-top: .6em;
+            /* border: 1px solid purple; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .add{
+            cursor: pointer;
+            border: none;
+            color: white;
+            background: #14c99b;
+            border-radius: .2em;
+            padding: .7em;
+            /* border: 1px solid red; */
+            width:48%;
+        }
+        ::placeholder{
+            /* transform: scaleY(.2); */
+            color: gray;
+            padding: .8px;
+        }
+        li{
+     /* border-top: 1px solid rgb(82, 74, 74); */
+     border: 1px solid rgb(82, 74, 74);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+        }
+        ul{
+    background-color: #ffff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="overall">
+       <form id="form" class="div">
+        
+            <input type="text" placeholder="New Task" id="input" class="input" autocomplete="off">
+            <div class="box">
+                <button class="add" id="adds" >ADD TASK</button>
+                <button class="add" id="clear" >CLEAR TASKS</button>
+            </div>
+        <ul id="listUL"></ul>
+       </form>
+</div>
+    
+
+
+    <script src="ass.js"></script>
+</body>
+</html>
